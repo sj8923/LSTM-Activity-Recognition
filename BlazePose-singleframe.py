@@ -17,7 +17,6 @@ import itertools, random
 import os, copy, glob
 import time, datetime
 import argparse, easydict
-get_ipython().run_line_magic('matplotlib', 'inline')
 mp_drawing = mp.solutions.drawing_utils
 mp_drawing_styles = mp.solutions.drawing_styles
 mp_pose = mp.solutions.pose
@@ -31,8 +30,8 @@ parser.add_argument("-i", "--input_path", required=True, type=str, help="INPUT �
 parser.add_argument("-c", "--confidence", required=False, type=float, default=0.5, help="최소 신뢰도를 지정할 수 있음")
 args = parser.parse_args()
 
-model_number = args.model
-input_path = args.input
+model_number = args.model_number
+input_path = args.input_path
 confidence = args.confidence
 
 ALL_LABEL_LIST = ["stand", "walk", "run", "sit", "greet_up_hands", "", "falldown", "cross_arms_stand", "cross_arms_sit",
