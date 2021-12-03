@@ -16,12 +16,15 @@ Classifing activities
 - PUSH UP  
 - CLAP  
 
-DATA
+Data
 ====================
 Used *사람동작 영상 (Human Movement Video) dataset*.  
 It's comprised of 50 subjects with max 4 people 12 angles.  
 [https://aihub.or.kr/aidata/138](URL)
-  
+
+Examples
+===========
+![C026100_001_complex-gifski-fast](https://user-images.githubusercontent.com/3463669/144547516-47ec894a-9d54-457e-91d4-937b0767ca29.gif)
   
 # References
 AI-Hub Datset : [https://aihub.or.kr/aidata/138](URL)  
