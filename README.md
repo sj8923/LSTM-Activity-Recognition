@@ -24,7 +24,7 @@ It's comprised of 50 subjects with max 4 people 12 angles.
   
   
 # References
-AI-Hub Datset : [https://aihub.or.kr/aidata/138](URL)
+AI-Hub Datset : [https://aihub.or.kr/aidata/138](URL)  
 blazepose : [https://github.com/vietanhdev/tf-blazepose](URL)  
 opencv : [https://github.com/opencv/opencv](URL)  
 tensorflow : [https://github.com/tensorflow/tensorflow](URL)  
