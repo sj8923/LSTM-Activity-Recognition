@@ -121,21 +121,16 @@ def calculateVectors(landmarks, vectors):
         vectors.append(y_vector_normalized)
     return vectors
 
-def predictPose(model, vectors, all_frame_labels):
+def predictPose(model, vectors):
     x_input = np.array(vectors)
     x_input = x_input.reshape((1, 24, 1))
     # one-hot에 대해 레이블 분류 확률 array
     result_array = model.predict(x_input)
     # result_array에서 가장 높은 값이 레이블 index
     result_label = LABEL_LIST_string[np.argmax(result_array[0])]
-    print(result_array[0], result_label, "\n")
-    
-    if result_array[0][0] >= 0.08:
-        result_label = "stand"
 
     cv2.putText(frame, result_label, (10, 60), 
                 cv2.FONT_HERSHEY_SIMPLEX, 0.7, (0, 250, 0), 2, cv2.LINE_AA)
-    
     return frame
 
 ## LSTM

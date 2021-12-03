@@ -106,14 +106,7 @@ def predictPose(model, vectors, n_steps, now_frame):
     if (now_frame != 1) and (now_frame % n_steps == 0):
         n_steps_prediction = np.array(n_steps_vectors, dtype=np.float32)
         n_steps_prediction = n_steps_prediction.reshape((1, n_steps, n_input))
-        
         result_label = LABEL_LIST_string[np.argmax(model.predict(n_steps_prediction)[0])]
-        print(model.predict(n_steps_prediction)[0], result_label, "\n")
-        
-        #n_steps_prediction = model.predict(n_steps_prediction)[0]
-        #n_steps_prediction = np.delete(n_steps_prediction, 6)
-        #result_label = LABEL_LIST[np.argmax(n_steps_prediction)]
-        #print(n_steps_prediction, result_label)
         
         # n_steps 만큼 모은 벡터들 초기화
         n_steps_vectors = []
