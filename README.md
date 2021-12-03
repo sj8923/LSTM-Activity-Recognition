@@ -1,8 +1,10 @@
-# LSTM-Activity-Recognition
+LSTM-Activity-Recognition
+=========================
 LSTM with Google BlazePose for Activity Recognition
 using 2D-Video or Web-Camera.  
   
-### Classifing activities
+Classifing activities
+---------------------
 - STAND  
 - WALK  
 - RUN  
